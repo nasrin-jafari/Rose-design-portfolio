@@ -1,0 +1,258 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "adobe-clean", "Source Sans Pro", "-apple-system",
+    "BlinkMacSystemFont", "Segoe UI", "Roboto", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+.container {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.box-detail {
+  display: flex;
+  flex-direction: column;
+}
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 34px 28px;
+  font-size: 1.4rem;
+  color: #012b55;
+  font-weight: 550;
+}
+.Description {
+  padding: 36px 0;
+  background-color: #f7f8f9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Introduction {
+  text-align: center;
+  width: 80%;
+  font-size: 1rem;
+  margin-bottom: 24px;
+  line-height: 20px;
+  color: #012b55;
+}
+.guidance {
+  color: #597188;
+  text-align: center;
+}
+.present {
+  display: none;
+}
+.btn {
+  display: none;
+}
+.Work-samples {
+  display: flex;
+  flex-direction: column;
+  padding-top: 4px;
+}
+.samples-group-one {
+  display: flex;
+  flex-direction: column;
+}
+.samples-group-two {
+  display: flex;
+  flex-direction: column;
+}
+.sample {
+  width: 100%;
+  height: 280px;
+  position: relative;
+  margin-bottom: 4px;
+}
+.img {
+  width: 100%;
+  height: 100%;
+}
+.caver {
+  display: none;
+  background-color: #274a66ce;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  color: rgb(255, 255, 255);
+}
+.sample:hover .caver {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.date {
+  font-family: "bjpg";
+  font-style: italic;
+  font-size: 0.9rem;
+  font-weight: 550;
+  margin-bottom: 4px;
+}
+.cover-description {
+  font-size: 1.7rem;
+  font-weight: 600;
+  padding: 0 20px;
+}
+.social {
+  background-color: #e5e9ee;
+  padding: 8px 8px;
+  border-radius: 50%;
+  margin-left: 1px;
+}
+.social-present,
+.social:hover {
+  background-color: #acbbcd;
+  cursor: pointer;
+}
+.social-media {
+  padding: 20px 0;
+  text-align: center;
+  vertical-align: middle;
+}
+.sample:hover {
+  cursor: pointer;
+}
+@media (min-width: 600px) {
+  .card {
+    flex-direction: row;
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+  .box-title {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 30%;
+    padding-right: 2%;
+  }
+  .box-detail {
+    width: 70%;
+  }
+  .icon-menu {
+    display: none;
+  }
+  .title {
+    width: 100%;
+    justify-content: start;
+    padding: 40px 0;
+  }
+  .present {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  li {
+    list-style: none;
+    margin-bottom: 10px;
+  }
+  .Skills {
+    font-size: 1rem;
+    color: #41576d;
+  }
+  .social-present {
+    background-color: #e5e9ee;
+    padding: 8px 8px;
+    border-radius: 50%;
+    margin-right: 4px;
+  }
+  .social-present:hover {
+    background-color: #acbbcd;
+  }
+  .title-present {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0 0 20px 0;
+  }
+  .social-media-title {
+    padding: 14px 0 18px 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+  .Description {
+    padding: 120px 0;
+  }
+  .Introduction {
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 38px;
+  }
+  .guidance {
+    font-size: 1.1rem;
+  }
+  .Work-samples {
+    flex-direction: row;
+    padding-top: 8px;
+  }
+  .samples-group-one {
+    margin-right: 4px;
+  }
+  .samples-group-two {
+    margin-left: 4px;
+  }
+  .sample {
+    margin-bottom: 8px;
+  }
+  .social-media {
+    padding: 40px 0;
+  }
+  .social {
+    margin-right: 4px;
+  }
+  .btn {
+    width: 50px;
+    height: 50px;
+    background-color: #e5e9ee;
+    border-radius: 8px;
+    position: fixed;
+    right: 20px;
+    bottom: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+  }
+}
+@media (min-width: 900px) {
+  .box-title {
+    padding-right: 4%;
+    width: 24%;
+  }
+  .box-detail {
+    width: 76%;
+  }
+  .Introduction {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 38px;
+  }
+  .name {
+    font-size: 1.5rem;
+  }
+  .title-present {
+    font-size: 1.2rem;
+  }
+  .social-media-title {
+    font-size: 1.2rem;
+
+    padding: 14px 0 18px 0;
+  }
+}
